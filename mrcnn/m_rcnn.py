@@ -43,7 +43,7 @@ class CustomConfig(Config):
     def __init__(self, num_classes):
 
 
-        classes_number = num_classes
+        self.NUM_CLASSES= 1+num_classes
         super().__init__()
     """Configuration for training on the toy shapes dataset.
     Derives from the base Config class and overrides values specific
